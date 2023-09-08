@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "regional-capital-app"
+client_id = "141c6300013ebec20cbcb12a62b80970"
+application_url = "https://modes-predicted-reload-gear.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products,read_script_tags,write_script_tags,read_themes,write_themes,read_orders,write_orders"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://modes-predicted-reload-gear.trycloudflare.com/auth/callback",
+  "https://modes-predicted-reload-gear.trycloudflare.com/auth/shopify/callback",
+  "https://modes-predicted-reload-gear.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "vikas-test-bean.myshopify.com"
